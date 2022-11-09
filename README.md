@@ -41,10 +41,10 @@ Test Accuracy: 93.9 %
 ```
 ** these are the distribution of the dates' types in the dataset:
 
-DOKOL     204
-SAFAVI    199
-ROTANA    166
-DEGLET     98
-SOGAY      94
-IRAQI      72
-BERHI      65
+DOKOL:     204, 
+SAFAVI:     199, 
+ROTANA:    166, 
+DEGLET:      98, 
+SOGAY:      94, 
+IRAQI:      72, 
+BERHI:      65
