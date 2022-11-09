@@ -7,7 +7,11 @@ For the prediction of the dates' type, an Artificial Neural Network (ANN) is emp
 
 The plots of the training/testing loss and accuracy can be found inside the image folder, while the script is named as *Dates_fruit.py*.
 
-Here are the results of the predicted classes for the test data: 
+Here are the results of the:
+- training process 
+- the training time 
+- the correctly classified dates per date type (DEGLET seems to be harder to distinguish -85% compared the rest types, like IRAQI which is 100% correctly classified)**
+- the test accuracy 
 
 ```
 Epoch: 10 ---> Loss: 1.38627064 & Train Accuracy: 77.86 %
@@ -35,3 +39,12 @@ SOGAY                    85.00
 Test Accuracy: 93.9 %
 
 ```
+** these are the distribution of the dates' types in the dataset:
+
+DOKOL     204
+SAFAVI    199
+ROTANA    166
+DEGLET     98
+SOGAY      94
+IRAQI      72
+BERHI      65
