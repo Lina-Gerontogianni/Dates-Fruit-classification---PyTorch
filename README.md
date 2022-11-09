@@ -10,7 +10,7 @@ The plots of the training/testing loss and accuracy can be found inside the imag
 Here are the results of the:
 - training process 
 - the training time 
-- the correctly classified dates per date type (DEGLET seems to be harder to distinguish -85% compared the rest types, like IRAQI which is 100% correctly classified)**
+- the correctly classified dates per date type (DEGLET seems to be harder to distinguish -85% compared the rest types, like SAFAVI which is 100% correctly classified)**
 - the test accuracy 
 
 ```
@@ -39,7 +39,7 @@ SOGAY                    85.00
 Test Accuracy: 93.9 %
 
 ```
-** these are the distribution of the dates' types in the dataset:
+** the distribution of the dates' types in the dataset:
 
 DOKOL:     204, 
 SAFAVI:     199, 
