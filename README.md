@@ -3,7 +3,7 @@ Mutliclass classification via ANN with PyTorch '1.13.0'
 
 A [kaggle](https://www.kaggle.com/datasets/muratkokludataset/date-fruit-datasets) dataset concerning 34 characteristics of 718 dates fruit of seven different types. 
 
-For the prediction of the dates' type, an Artificial Neural Network (ANN) is employed with two hidden layers. The test accuracy is 93.9% (higher than the cited paper in [here](https://www.kaggle.com/datasets/muratkokludataset/date-fruit-datasets)) whereas the CPU training time is only a few seconds.
+For the prediction of the dates' type, an Artificial Neural Network (ANN) is employed with two hidden layers. The test accuracy is 92.2% whereas the CPU training time is only a few seconds.
 
 The plots of the training/testing loss and accuracy can be found inside the image folder, while the script is named as *Dates_fruit.py*.
 
@@ -45,7 +45,7 @@ ROTANA                   85.71
 SAFAVI                  100.00
 SOGAY                    85.00
 
-Test Accuracy: 93.9 %
+Test Accuracy: 92.2 %
 
 ```
 ** the distribution of the dates' types in the dataset:
