@@ -30,7 +30,6 @@ y_data = data.Class.map(types_mapping).values
 # Creating the feature dataset 
 X_data = data.drop('Class', axis=1).values
 
-
 # Splitting data to training and test
 X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, shuffle= True, test_size=0.2 )
 
@@ -77,16 +76,18 @@ test_correct = []
 # Timing the training process
 start_point = time.time()
 
+# Training the ANN
 for i in range(epochs):
     
     train_corr = 0
     test_corr = 0
     i += 1
-    # Apply the model
+       
+    # Applying the model
     y_pred = model.forward(X_train)
     loss = loss_fun(y_pred, y_train)
     
-    # Tally the number of correct predictions
+    # Tallying the number of correct predictions
     predicted = torch.max(y_pred.data, 1)[1]
     train_corr = (predicted == y_train).sum()
     
@@ -100,17 +101,17 @@ for i in range(epochs):
     train_losses.append(loss.item())
     train_correct.append(train_corr.item())
     
-    # Predict the test data
+    # Predicting the test data
     with torch.no_grad():
         
-        # Apply the model
+        # Applying the model
         y_fitted = model.forward(X_test) 
 
-        # Tally the number of correct predictions
+        # Tallying the number of correct predictions
         predicted = torch.max(y_fitted.data, 1)[1] 
         test_corr  = (predicted == y_test).sum()
     
-    # Update test loss and accuracy for the epoch
+    # Updating test loss and accuracy for the epoch
     loss = loss_fun(y_fitted, y_test)
     test_losses.append(loss)
     test_correct.append(test_corr)
